@@ -44,13 +44,69 @@
                 <area shape="circle" coords="110,95,900" href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)" 
                 alt="Córdoba">
             </map>
-        <li>&lt;article&gt;</li>
+        <li>&lt;article&gt;</li><p>La etiqueta article se usa para definir
+            un contenido un contenido independiente dentro de un documento de HTML 
+        </p>
+        <article>
+            <h2>Elecciones en Santa Fe</h2>
+            <h4>Unidos para Cambiar Santa Fe</h4>
+            <p>Esta fuerza política sacó 34,61% de los votos</p>
+        </article>
+        <article>
+            <h4>Mas por Santa Fe</h4>
+            <p>Esta fuerza política sacó 15,15% de los votos</p>
+        </article>
+        <article>
+            <h4>La Libertad Avanza</h4>
+            <p>Esta fuerza política sacó 14,11% de los votos</p>
+        </article>
         <li>&lt;aside&gt;</li>
+        <style>
+            aside {
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                background-color: aquamarine;
+            }
+        </style>
+        <body>
+            
+             <p>La etiqueta aside se utiliza para identificar secciones de una página que 
+            contiene información relacionada con el contenido principal</p>
+            <p>​River Plate y Talleres de Córdoba jugaron ayer, domingo 13 de abril de 2025, en el 
+                Estadio Monumental por la 13.ª fecha del Torneo Apertura. El partido terminó 1-1.</p>
+            <aside>El Estadio Monumental, denominado comercialmente como Mâs Monumental,
+                ​ es un recinto deportivo mundialista propiedad del Club Atlético River Plate, 
+                ubicado en la ciudad de Buenos Aires, Argentina. Situado en la avenida Figueroa Alcorta 1797,
+                en el barrio de Belgrano, fue inaugurado el 26 de mayo de 1938 con un partido amistoso entre 
+                River Plate y Peñarol de Uruguay, que finalizó 3–1 a favor del equipo local.</aside> 
+        </body>            
         <li>&lt;audio&gt;</li>
-        <li>&lt;b&gt;</li>
-        <li>&lt;base&gt;</li>
+        <li>&lt;b&gt;</li><body>
+            <p>La etiqueta b especifica un texto en negrita</p>
+            <p>Mientras escribo esto <b>voy a usar la etiqueta b de negritas</b></p>
+        </body>
+        <li>&lt;base&gt;</li><head>
+            <base href="https://www.google.com" target="_blank">
+        </head>
+        <body>
+            <p>La etiqueta base define la URL base para todos los enlaces relativos de un documento.
+               Debe tener presente un atributo href o un atributo target o ambos.
+               Solo puede haber un único elemento base en un documento y debe estar dentro del elemento <head>
+            </p>
+            <p>
+                <a href="">Esto me lleva a Google</a> aunque no parezca <a href="">ESTA</a> palabra también
+            </p>
+        </body>
         <li>&lt;bdi&gt;</li>
+        <body>
+            <p>BDI significa aislamiento bidireccional, se utiliza para asegurar la inclusion 
+                de texto que se lee de derecha a izquierda, en hebreo o arabe
+            </p>
+            <p>Yo me llamo Gustavo y en arabe se escribe <bdi>غوستافو</bdi></p>
+        </body>
         <li>&lt;bdo&gt;</li>
+        
         <li>&lt;blockquote&gt;</li>
         <li>&lt;body&gt;</li>
         <li>&lt;br&gt;</li>
