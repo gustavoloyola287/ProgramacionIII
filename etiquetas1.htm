@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML5</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            gap: 2rem;
+            padding-left: 1rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listado de etiquetas válidas en HTML5</h1>
+    <p>A continuación se enumeran todas las etiquetas reconocidas por HTML5 actualmente:</p>
+    <ul>
+        <li>&lt;a&gt;</li><a href="https://www.google.com">La etiqueta crea hipervínculo que vincula nuestra página 
+            a otra aquí la utilizamos para ir google </a>
+        <li>&lt;abbr&gt;</li><p>El <abbr title="Agencia de Recaudación y Control Aduanero">ARCA</abbr> es la 
+            agencia de recaudación de impuestos de Argentina</p>
+        <li>&lt;area&gt;</li><p>La etiqueta area define un Área cliqueable dentro de una imagen </p>
+            <img width="100" height="200" src="argentina.jpg" alt="Argentina" usemap="#margentina">
+            <map name="margentina">
+                <area shape="circle" coords="110,95,900" href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)" 
+                alt="Córdoba">
+            </map>
+        <li>&lt;article&gt;</li><p>La etiqueta article se usa para definir
+            un contenido un contenido independiente dentro de un documento de HTML 
+        </p>
+        <article>
+            <h2>Elecciones en Santa Fe</h2>
+            <h4>Unidos para Cambiar Santa Fe</h4>
+            <p>Esta fuerza política sacó 34,61% de los votos</p>
+        </article>
+        <article>
+            <h4>Mas por Santa Fe</h4>
+            <p>Esta fuerza política sacó 15,15% de los votos</p>
+        </article>
+        <article>
+            <h4>La Libertad Avanza</h4>
+            <p>Esta fuerza política sacó 14,11% de los votos</p>
+        </article>
+        <li>&lt;aside&gt;</li>
+        <style>
+            aside {
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                background-color: aquamarine;
+            }
+        </style>
+        <body>
+            
+             <p>La etiqueta aside se utiliza para identificar secciones de una página que 
+            contiene información relacionada con el contenido principal</p>
+            <p>​River Plate y Talleres de Córdoba jugaron ayer, domingo 13 de abril de 2025, en el 
+                Estadio Monumental por la 13.ª fecha del Torneo Apertura. El partido terminó 1-1.</p>
+            <aside>El Estadio Monumental, denominado comercialmente como Mâs Monumental,
+                ​ es un recinto deportivo mundialista propiedad del Club Atlético River Plate, 
+                ubicado en la ciudad de Buenos Aires, Argentina. Situado en la avenida Figueroa Alcorta 1797,
+                en el barrio de Belgrano, fue inaugurado el 26 de mayo de 1938 con un partido amistoso entre 
+                River Plate y Peñarol de Uruguay, que finalizó 3–1 a favor del equipo local.</aside> 
+        </body>            
+        <li>&lt;audio&gt;</li>
+        <li>&lt;b&gt;</li><body>
+            <p>La etiqueta b especifica un texto en negrita</p>
+            <p>Mientras escribo esto <b>voy a usar la etiqueta b de negritas</b></p>
+        </body>
+        <li>&lt;base&gt;</li><head>
+            <base href="https://www.google.com" target="_blank">
+        </head>
+        <body>
+            <p>La etiqueta base define la URL base para todos los enlaces relativos de un documento.
+               Debe tener presente un atributo href o un atributo target o ambos.
+               Solo puede haber un único elemento base en un documento y debe estar dentro del elemento <head>
+            </p>
+            <p>
+                <a href="">Esto me lleva a Google</a> aunque no parezca <a href="">ESTA</a> palabra también
+            </p>
+        </body>
+        <li>&lt;bdi&gt;</li>
+        <body>
+            <p>BDI significa aislamiento bidireccional, se utiliza para asegurar la inclusion 
+                de texto que se lee de derecha a izquierda, en hebreo o arabe
+            </p>
+            <p>Yo me llamo Gustavo y en arabe se escribe <bdi>غوستافو</bdi></p>
+        </body>
+        <li>&lt;bdo&gt;</li>
+           
+        <li>&lt;blockquote&gt;</li>
+
+        <li>&lt;body&gt;</li>
+        <li>&lt;br&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;canvas&gt;</li>
+        <li>&lt;caption&gt;</li>
+        <li>&lt;cite&gt;</li>
+        <li>&lt;code&gt;</li>
+        <li>&lt;col&gt;</li>
+        <li>&lt;colgroup&gt;</li>
+        <li>&lt;data&gt;</li>
+        <li>&lt;datalist&gt;</li>
+        <li>&lt;dd&gt;</li>
+        <li>&lt;del&gt;</li>
+        <li>&lt;details&gt;</li>
+        <li>&lt;dfn&gt;</li>
+        <li>&lt;dialog&gt;</li>
+        <li>&lt;div&gt;</li>
+        <li>&lt;dl&gt;</li>
+        <li>&lt;dt&gt;</li>
+        <li>&lt;em&gt;</li>
+        <li>&lt;embed&gt;</li>
+        <li>&lt;fieldset&gt;</li>
+        <li>&lt;figcaption&gt;</li>
+        <li>&lt;figure&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;form&gt;</li>
+        <li>&lt;h1&gt;</li>
+        <li>&lt;h2&gt;</li>
+        <li>&lt;h3&gt;</li>
+        <li>&lt;h4&gt;</li>
+        <li>&lt;h5&gt;</li>
+        <li>&lt;h6&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;hr&gt;</li>
+        <li>&lt;html&gt;</li>
+        <li>&lt;i&gt;</li>
+        <li>&lt;iframe&gt;</li>
+        <li>&lt;img&gt;</li>
+        <li>&lt;input&gt;</li>
+        <li>&lt;ins&gt;</li>
+        <li>&lt;kbd&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;legend&gt;</li>
+        <li>&lt;li&gt;</li>
+        <li>&lt;link&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;map&gt;</li>
+        <li>&lt;mark&gt;</li>
+        <li>&lt;math&gt;</li>
+        <li>&lt;menu&gt;</li>
+        <li>&lt;menuitem&gt;</li>
+        <li>&lt;meta&gt;</li>
+        <li>&lt;meter&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;noscript&gt;</li>
+        <li>&lt;object&gt;</li>
+        <li>&lt;ol&gt;</li>
+        <li>&lt;optgroup&gt;</li>
+        <li>&lt;option&gt;</li>
+        <li>&lt;output&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;param&gt;</li>
+        <li>&lt;pre&gt;</li>
+        <li>&lt;progress&gt;</li>
+        <li>&lt;q&gt;</li>
+        <li>&lt;rp&gt;</li>
+        <li>&lt;rt&gt;</li>
+        <li>&lt;ruby&gt;</li>
+        <li>&lt;s&gt;</li>
+        <li>&lt;samp&gt;</li>
+        <li>&lt;script&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;select&gt;</li>
+        <li>&lt;slot&gt;</li>
+        <li>&lt;small&gt;</li>
+        <li>&lt;source&gt;</li>
+        <li>&lt;span&gt;</li>
+        <li>&lt;strong&gt;</li>
+        <li>&lt;style&gt;</li>
+        <li>&lt;sub&gt;</li>
+        <li>&lt;summary&gt;</li>
+        <li>&lt;sup&gt;</li>
+        <li>&lt;svg&gt;</li>
+        <li>&lt;table&gt;</li>
+        <li>&lt;tbody&gt;</li>
+        <li>&lt;td&gt;</li>
+        <li>&lt;template&gt;</li>
+        <li>&lt;textarea&gt;</li>
+        <li>&lt;tfoot&gt;</li>
+        <li>&lt;th&gt;</li>
+        <li>&lt;thead&gt;</li>
+        <li>&lt;time&gt;</li>
+        <li>&lt;title&gt;</li>
+        <li>&lt;tr&gt;</li>
+        <li>&lt;track&gt;</li>
+        <li>&lt;u&gt;</li>
+        <li>&lt;ul&gt;</li>
+        <li>&lt;var&gt;</li>
+        <li>&lt;video&gt;</li>
+        <li>&lt;wbr&gt;</li>
+    </ul>
+</body>
+</html>

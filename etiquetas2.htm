@@ -34,92 +34,112 @@
     <h1>Listado de etiquetas válidas en HTML5</h1>
     <p>A continuación se enumeran todas las etiquetas reconocidas por HTML5 actualmente:</p>
     <ul>
-        <li>&lt;a&gt;</li><a href="https://www.google.com">La etiqueta crea hipervínculo que vincula nuestra página 
-            a otra aquí la utilizamos para ir google </a>
-        <li>&lt;abbr&gt;</li><p>El <abbr title="Agencia de Recaudación y Control Aduanero">ARCA</abbr> es la 
-            agencia de recaudación de impuestos de Argentina</p>
-        <li>&lt;area&gt;</li><p>La etiqueta area define un Área cliqueable dentro de una imagen </p>
-            <img width="100" height="200" src="argentina.jpg" alt="Argentina" usemap="#margentina">
-            <map name="margentina">
-                <area shape="circle" coords="110,95,900" href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)" 
-                alt="Córdoba">
-            </map>
-        <li>&lt;article&gt;</li><p>La etiqueta article se usa para definir
-            un contenido un contenido independiente dentro de un documento de HTML 
-        </p>
-        <article>
-            <h2>Elecciones en Santa Fe</h2>
-            <h4>Unidos para Cambiar Santa Fe</h4>
-            <p>Esta fuerza política sacó 34,61% de los votos</p>
-        </article>
-        <article>
-            <h4>Mas por Santa Fe</h4>
-            <p>Esta fuerza política sacó 15,15% de los votos</p>
-        </article>
-        <article>
-            <h4>La Libertad Avanza</h4>
-            <p>Esta fuerza política sacó 14,11% de los votos</p>
-        </article>
+        <li>&lt;a&gt;</li>
+        <li>&lt;abbr&gt;</li>
+        <li>&lt;area&gt;</li>
+        <li>&lt;article&gt;</li>
         <li>&lt;aside&gt;</li>
-        <style>
-            aside {
-                padding-left: 15px;
-                margin-left: 15px;
-                float: right;
-                background-color: aquamarine;
-            }
-        </style>
-        <body>
-            
-             <p>La etiqueta aside se utiliza para identificar secciones de una página que 
-            contiene información relacionada con el contenido principal</p>
-            <p>​River Plate y Talleres de Córdoba jugaron ayer, domingo 13 de abril de 2025, en el 
-                Estadio Monumental por la 13.ª fecha del Torneo Apertura. El partido terminó 1-1.</p>
-            <aside>El Estadio Monumental, denominado comercialmente como Mâs Monumental,
-                ​ es un recinto deportivo mundialista propiedad del Club Atlético River Plate, 
-                ubicado en la ciudad de Buenos Aires, Argentina. Situado en la avenida Figueroa Alcorta 1797,
-                en el barrio de Belgrano, fue inaugurado el 26 de mayo de 1938 con un partido amistoso entre 
-                River Plate y Peñarol de Uruguay, que finalizó 3–1 a favor del equipo local.</aside> 
-        </body>            
         <li>&lt;audio&gt;</li>
-        <li>&lt;b&gt;</li><body>
-            <p>La etiqueta b especifica un texto en negrita</p>
-            <p>Mientras escribo esto <b>voy a usar la etiqueta b de negritas</b></p>
-        </body>
-        <li>&lt;base&gt;</li><head>
-            <base href="https://www.google.com" target="_blank">
-        </head>
-        <body>
-            <p>La etiqueta base define la URL base para todos los enlaces relativos de un documento.
-               Debe tener presente un atributo href o un atributo target o ambos.
-               Solo puede haber un único elemento base en un documento y debe estar dentro del elemento <head>
-            </p>
-            <p>
-                <a href="">Esto me lleva a Google</a> aunque no parezca <a href="">ESTA</a> palabra también
-            </p>
-        </body>
+        <li>&lt;b&gt;</li>
+        <li>&lt;base&gt;</li>
         <li>&lt;bdi&gt;</li>
-        <body>
-            <p>BDI significa aislamiento bidireccional, se utiliza para asegurar la inclusion 
-                de texto que se lee de derecha a izquierda, en hebreo o arabe
-            </p>
-            <p>Yo me llamo Gustavo y en arabe se escribe <bdi>غوستافو</bdi></p>
-        </body>
-        <li>&lt;bdo&gt;</li>
-        <body>
+        <li>&lt;bdo&gt;</li> <body>
             <p>
                 BDO significa sobreescritura bidireccional, anula la dirección de lectura predeterminada del texto.
                 Para leer el texto de derecha a izquierda o viceversa.
             </p>
-            <p><bdo dir="ltr">Este texto leelo como quieras</bdo></p>
-        </body>
-        <li>&lt;blockquote&gt;</li>
+            <p><bdo dir="rtl">Este texto leelo como quieras</bdo></p>
+            </body>
+
+        <li>&lt;blockquote&gt;</li><style>
+            blockquote{
+                background-color: burlywood;
+            }
+        </style>
+        <p>
+            Blockquote hace una cita en bloque, se utiliza para mostrar seccion donde se cita contenido
+            de otra fuente externa
+       </p><blockquote cite="https://www.un.org/es/">
+        La Organización de las Naciones Unidas (ONU), también conocida simplemente como Naciones Unidas (NN. UU.),
+         es la mayor organización internacional existente. Se creó en 1945 en un mundo devastado por la Segunda Guerra Mundial,
+          para mantener la paz y seguridad internacionales, fomentar relaciones de amistad entre las naciones, 
+          lograr la cooperación internacional para solucionar problemas globales y servir de centro que armonice 
+          las acciones de las naciones.[1]​ Su sede está en Nueva York (Estados Unidos) y está sujeta a un régimen 
+          de extraterritorialidad. También tiene oficinas en Ginebra (Suiza), Nairobi (Kenia) y Viena (Austria).
+       </blockquote>
+
         <li>&lt;body&gt;</li>
-        <li>&lt;br&gt;</li>
+        <p>
+            La etiqueta body define el cuerpo del documento, 
+            contiene todo el contenido de un documento HTML 
+            como encabezados, párrafos, imagenes, hipervínculos,
+            tablas, listas. Solo puede haber una etiqueta body 
+            en un documento HTML
+        </p>
+        <li>&lt;br&gt;</li><p>
+            La etiqueta br inserta un solo salto de línea. <br>
+            Es útil para escribir direcciones o poemas. <br>
+            Es una etiqueta vacía, lo que significa que no tiene 
+            <br>
+            <br>
+            etiqueta final.
+        </p>
+
         <li>&lt;button&gt;</li>
+        <p>
+            Button es una etiqueta, que se utiliza para crear botones clicables
+            dentro de la página web, puedes desncadenar una acción o evento,
+            incluso mostrar u ocultar contenido de la página web
+        </p>
+        <button type="button" onclick="alert('Hola Perrisqui')">Clícame</button>
         <li>&lt;canvas&gt;</li>
-        <li>&lt;caption&gt;</li>
+        <p>
+            La etiqueta canvas sirve para dibujar gráficos mediante scripts 
+        </p>
+        <canvas id="miCanvas" width="300" height="150" style="border:1px solid #000;"></canvas> <!--crea el lienzo del canvas-->
+        <script>
+            const canvas = document.getElementById('miCanvas');  
+            const ctx = canvas.getContext('2d');
+
+            ctx.fillStyle = 'red';           
+            ctx.fillRect(50, 50, 100, 60);
+
+            ctx.globalAlpha = 0.2;
+            ctx.fillStyle = 'blue';          
+            ctx.fillRect(70, 70, 100, 60);
+          </script>
+
+        <li>&lt;caption&gt;</li><p>La etiqueta caption se utilza para colocar un título en una tabla
+            se coloca después de la etiqueta de apertura de la tabla
+        </p>
+        <table>
+            <caption>Mis tablas</caption>
+            <thead>
+                <tr>
+                    <th>PRODUCTO</th>
+                    <th>PRECIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manzana</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Naranja</td>
+                    <td>$1000</td>
+                </tr>
+            </tbody>
+        </table>
+
         <li>&lt;cite&gt;</li>
+        <p>
+            La etiqueta cite se utiliza para hacer referencia a un autor
+            o una obra determinada, el texto dentro de la etiqueta se 
+            muestra en cursiva
+        </p>
+        <p>Uno de los libros que he leído es <cite>La Fuerza de uno, de Bryce Courtenay</cite></p>
+
         <li>&lt;code&gt;</li>
         <li>&lt;col&gt;</li>
         <li>&lt;colgroup&gt;</li>
