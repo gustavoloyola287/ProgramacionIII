@@ -29,7 +29,7 @@ for numero in numeros:
 for i in range(len(numeros)):
     for j in range(i+1, len(numeros)):
         suma = numeros[i]+numeros[j]
-        print(f"{numeros[i]} + {numeros[j]} = {suma}")
+        print(f"n\{numeros[i]} + {numeros[j]} = {suma}")
     
         
 for i in range(len(numeros)):

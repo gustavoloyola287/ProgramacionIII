@@ -145,20 +145,125 @@
         </p>
         <p>Uno de los libros que he leído es <cite>La Fuerza de uno, de Bryce Courtenay</cite></p>
 
-        <li>&lt;code&gt;</li>
+        <li>&lt;code&gt;</li><p>Esta etiqueta representa fragmento de código en formato de text</p>
+        <p>En HTML <code>button</code> define un boton clicable</p>
 
-        <li>&lt;col&gt;</li>
-        <li>&lt;colgroup&gt;</li>
-        <li>&lt;data&gt;</li>
-        <li>&lt;datalist&gt;</li>
-        <li>&lt;dd&gt;</li>
-        <li>&lt;del&gt;</li>
-        <li>&lt;details&gt;</li>
-        <li>&lt;dfn&gt;</li>
-        <li>&lt;dialog&gt;</li>
-        <li>&lt;div&gt;</li>
-        <li>&lt;dl&gt;</li>
-        <li>&lt;dt&gt;</li>
+        <li>&lt;col&gt;</li><p>Sirve para especificar propiedades de estilo para 
+            las columnas que estan dentro de una tabla</p>
+            <table>
+                <col style="background-color: aquamarine;">
+                <col style="background-color: yellow;">
+                <caption>Mis tablas</caption>
+                <thead>
+                    <tr>
+                        <th>PRODUCTO</th>
+                        <th>PRECIO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manzana</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Naranja</td>
+                        <td>$1000</td>
+                    </tr>
+                </tbody>
+            </table>
+        <li>&lt;colgroup&gt;</li><p>Esta etiqueta se utilza para especificar un grupo 
+            de columnas en una tabla con el propósito de aplicar estilos </p>
+            <table>
+                <colgroup>
+                    <col span="2" style="background-color: blue;">
+                    <col style="background-color: yellow;">
+                </colgroup>
+                <caption style="color: red;">FRUTAS</caption>
+                <thead>
+                    <tr style="color: greenyellow;">
+                        <th>PRODUCTO</th>
+                        <th>PRECIO</th>
+                        <th style="color: #000;">OFERTA X 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manzana</td>
+                        <td>$500</td>
+                        <td style="color: #000;">$900</td>
+                    </tr>
+                    <tr>
+                        <td>Pera</td>
+                        <td>$700</td>
+                        <td style="color: #000;">$1300</td>
+                    </tr>
+                    <tr>
+                        <td>Naranja</td>
+                        <td>$1000</td>
+                        <td style="color: #000;">$1900</td>
+                    </tr>
+                </tbody>
+            </table>
+        <li>&lt;data&gt;</li><p>Se utiliza para asociar un valor a un 
+            elemento que no es visible para el usuario, en este caso
+            cada nombre de producto esta asociado a un número de producto</p>
+            <ul>
+                <li><data value="1212">Puré de tomate</data></li>
+                <li><data value="1313">Puré de papa</data></li>
+                <li><data value="1414">Puré de manzana</data></li>
+            </ul>
+
+        <li>&lt;datalist&gt;</li><p>Esta etiqueta se utiliza para proporcionar una función de
+            autocompletado para los elementos. Los usuarios veran una lista desplegable de opciones
+            predefinidas.
+        </p>
+        <label for="">Cartelera</label>
+        <input id="inputpeliculas" list="peliculas" placeholder="Selecciona una película">
+        <datalist id="peliculas">
+            <option value="El señor de los anillos"></option>
+            <option value="Star War"></option>
+            <option value="Pulp Fiction"></option>
+        </datalist>
+        <li>&lt;dd&gt;</li><p>Esta etiqueta se utiza para describir un término</p>
+            <dl>
+                <dt>Café</dt>
+                <dd>Bebida hecha a base de café tostado</dd>
+                <dt>Leche</dt>
+                <dd>Liquido nutritivo producido por las glándulas mamarias de los mamiferos</dd>
+            </dl>
+
+        <li>&lt;del&gt;</li><p>Esta etiqueta se utiliza para mostrar texto que ha sido eliminado</p>
+        <p>El precio original era de <del>$100</del>, ahora es de $80</p>
+        <li>&lt;details&gt;</li><p>Esta etiqueta se utiliza para crear un elemento desplegable
+             que permite ocultar o mostrar contenido adicional</p>
+             <details>
+                <summary>Presiona para ver más detalles</summary>
+                <div>Tomá por curioso</div> 
+             </details>
+             <details>
+                <summary>Sigue presionando</summary>
+                <div>Como te gusta cogote, no</div>
+             </details>
+        <li>&lt;dfn&gt;</li><p>Esta etiqueta se utiliza para definir un termino dentro del contenido</p>
+        <p><dfn>HTML</dfn> (Hyper Text Markup Languaje) es el lenguaje básico
+                para crear y estructurar el contenido de una página web</p>
+        <li>&lt;dialog&gt;</li><p>Esta etiqueta define un cuadro de diálogo o una subventana</p>
+                <p>Esto es texto aleatorio</p>
+                        <dialog open>Esta es una ventana de diálogo</dialog>
+        <li>&lt;div&gt;</li><p>Esta etiqueta es un contenedor genérico de bloque 
+            que se utilza para grupar elemntos
+        </p>
+            <div style="border: 10px black;text-align: center; background-color: gray;" tex><h2>Este es un encabezado en un div</h2>
+            <p>Esto es texto dentro del div</p></div><p>Esto es texto fuera del div</p>
+        <li>&lt;dl&gt;</li><p>Esta etiqueta se utiliza para crear una lista de definiciones
+            donde se muestra un término seguido de su definición, esta se utiliza con dos etiquetas más 
+            dt que envuelve el término que se define, y la etiqueta dd que es la definición del término
+        </p>
+            <dl>
+                <dt>Café</dt><dd>Bebida caliente hecha a base de granos tostados y molidos de café</dd>
+                <dt>Té</dt><dd>Infusión preparada al verter agua caliente sobre hojas secas de té</dd>
+            </dl>
+        <li>&lt;dt&gt;</li><p>Etiqueta definida arriba en la etiqueta dl</p>
         <li>&lt;em&gt;</li>
         <li>&lt;embed&gt;</li>
         <li>&lt;fieldset&gt;</li>
