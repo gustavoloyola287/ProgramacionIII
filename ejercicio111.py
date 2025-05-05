@@ -20,3 +20,18 @@
 #Entrada: raíz = [2, nulo, 3, nulo, 4, nulo, 5, nulo, 6]
 # Salida: 5
 
+class Nodo:
+    def __init__(self, dato):
+        self.dato = dato
+        self.izquierda = None
+        self.derecha = None
+        
+class ArbolBinario:
+    def __init__(self):
+        self.raiz = None
+    
+    def insertar(self, dato):
+        if self.raiz is None:
+            self            
+        
+    
